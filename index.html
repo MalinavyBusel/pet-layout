@@ -14,12 +14,14 @@
 <body>
   <div class="wrapper">
     <nav class="navbar">
-      <a href="">
-        <img src="images/logo.svg" class="logo">
-      </a>
-      <div class="burger-menu">
-        <i class="fa-solid fa-bars"></i>
-        <i class="fa-solid fa-xmark"></i>
+      <div class="menu-header">
+        <a href="" class="logo-link">
+          <img alt="logo" src="images/logo.svg" class="logo">
+        </a>
+        <div class="burger-menu">
+          <i class="fa-solid fa-bars"></i>
+          <i class="fa-solid fa-xmark"></i>
+        </div>
       </div>
       <menu>
         <div class="pages">
@@ -27,12 +29,22 @@
           <a href="" class="navlink">page 1</a>
           <a href="" class="navlink">page 2</a>
         </div>
-        <div class="extra">
-          <a href="" class="navhelper">support</a>
-          <a href="" class="navhelper">contact</a>
-        </div>
-        <div>
-          <p class="copyright">©2020 ACME LLC. </p>
+        <div class="bottom-part">
+          <div class="extra">
+            <a href="" class="navhelper">support</a>
+            <a href="" class="navhelper">contact</a>
+          </div>
+          <div class="social-in-menu">
+            <a href="" class="social-wrapper">
+              <img src="images/twi.png" alt="twi" class="social-logo">
+            </a>
+            <a href="" class="social-wrapper">
+              <img src="images/fb.png" alt="fb" class="social-logo">
+            </a>
+          </div>
+          <div>
+            <p class="copyright">©2020 ACME LLC. </p>
+          </div>
         </div>
       </menu>
     </nav>
@@ -75,10 +87,12 @@
   </div>
   <script>
     const burgerButton = document.getElementsByClassName('burger-menu')[0];
-    console.log('burgerButton', burgerButton)
+    const menuHeader = document.getElementsByClassName('menu-header')[0];
+    const navbar = document.getElementsByClassName('navbar')[0];
 
     burgerButton.addEventListener('click', () => {
-        burgerButton.classList.toggle("open");
+        menuHeader.classList.toggle("open");
+        navbar.classList.toggle("open");
     })
   </script>
 </body>
