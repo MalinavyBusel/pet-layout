@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Title</title>
+  <script src="https://kit.fontawesome.com/5b6cad364b.js" crossorigin="anonymous"></script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
@@ -12,23 +13,29 @@
 </head>
 <body>
   <div class="wrapper">
-    <div class="navbar">
-      <a href="" class="img-wrapper">
+    <nav class="navbar">
+      <a href="">
         <img src="images/logo.svg" class="logo">
       </a>
-      <div class="pages">
-        <a href="" class="navlink current-page">home</a>
-        <a href="" class="navlink">page 1</a>
-        <a href="" class="navlink">page 2</a>
+      <div class="burger-menu">
+        <i class="fa-solid fa-bars"></i>
+        <i class="fa-solid fa-xmark"></i>
       </div>
-      <div class="extra">
-        <a href="" class="navhelper">support</a>
-        <a href="" class="navhelper">contact</a>
-      </div>
-      <div>
-        <p class="copyright">©2020 ACME LLC. </p>
-      </div>
-    </div>
+      <menu>
+        <div class="pages">
+          <a href="" class="navlink current-page">home</a>
+          <a href="" class="navlink">page 1</a>
+          <a href="" class="navlink">page 2</a>
+        </div>
+        <div class="extra">
+          <a href="" class="navhelper">support</a>
+          <a href="" class="navhelper">contact</a>
+        </div>
+        <div>
+          <p class="copyright">©2020 ACME LLC. </p>
+        </div>
+      </menu>
+    </nav>
     <div class="social">
       <a href="" class="img-wrapper">
         <img src="images/twi.png" alt="twi" class="social-logo">
@@ -38,13 +45,15 @@
       </a>
     </div>
     <div class="content">
-      <h2 class="header">simple starter <span class="header">template</span></h2>
+      <h2 class="header">simple starter <br/> <span class="highlighted-header">template</span></h2>
       <p class="main-text">
         A clean simple desktop design with space to add & alter items instead of removing them.
         An easy to use starting point for beginners
         to make mockups or designs that look nice, quickly.
       </p>
-      <a class="button">learn more</a>
+      <div class="button-wrapper">
+        <a class="button">learn more</a>
+      </div>
       <div class="image-container">
         <a href="" class="img-wrapper right-margin">
           <img src="images/img.png" alt="Mars" class="pic">
@@ -64,5 +73,13 @@
         eget accumsan leo tompor eget.</p>
     </div>
   </div>
+  <script>
+    const burgerButton = document.getElementsByClassName('burger-menu')[0];
+    console.log('burgerButton', burgerButton)
+
+    burgerButton.addEventListener('click', () => {
+        burgerButton.classList.toggle("open");
+    })
+  </script>
 </body>
 </html>
