@@ -146,9 +146,6 @@ a {
     gap: 32px;
 }
 
-.right-margin {
-}
-
 menu {
     display: flex;
     flex-direction: column;

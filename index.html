@@ -13,7 +13,7 @@
 </head>
 <body>
   <div class="wrapper">
-    <nav class="navbar">
+    <section class="navbar">
       <div class="menu-header">
         <a href="" class="logo-link">
           <img alt="logo" src="images/logo.svg" class="logo">
@@ -24,11 +24,11 @@
         </div>
       </div>
       <menu>
-        <div class="pages">
+        <nav class="pages">
           <a href="" class="navlink current-page">home</a>
           <a href="" class="navlink">page 1</a>
           <a href="" class="navlink">page 2</a>
-        </div>
+        </nav>
         <div class="bottom-part">
           <div class="extra">
             <a href="" class="navhelper">support</a>
@@ -47,7 +47,7 @@
           </div>
         </div>
       </menu>
-    </nav>
+    </section>
     <div class="social">
       <a href="" class="social-wrapper">
         <img src="images/twi.png" alt="twi" class="social-logo">
@@ -56,16 +56,20 @@
         <img src="images/fb.png" alt="fb" class="social-logo">
       </a>
     </div>
-    <div class="content">
-      <h2 class="header">simple starter <br/> <span class="highlighted-header">template</span></h2>
-      <p class="main-text">
-        A clean simple desktop design with space to add & alter items instead of removing them.
-        An easy to use starting point for beginners
-        to make mockups or designs that look nice, quickly.
-      </p>
-      <div class="button-wrapper">
-        <a class="button">learn more</a>
-      </div>
+    <main class="content">
+      <section>
+        <header>
+          <h2 class="header">simple starter <br/> <span class="highlighted-header">template</span></h2>
+        </header>
+        <p class="main-text">
+          A clean simple desktop design with space to add & alter items instead of removing them.
+          An easy to use starting point for beginners
+          to make mockups or designs that look nice, quickly.
+        </p>
+        <div class="button-wrapper">
+          <a class="button">learn more</a>
+        </div>
+      </section>
       <div class="image-container">
         <a href="" class="img-wrapper right-margin">
           <img src="images/img.png" alt="Mars" class="pic">
@@ -80,10 +84,12 @@
           <img src="images/img_3.jpg" alt="Forest" class="pic">
         </a>
       </div>
-      <h3>news <img src="images/triangle.png" alt="triangle" class="emoji"></h3>
-      <p class="small-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc accumsan sed diam ut consectetur. Nunc maximus magna dolor,
-        eget accumsan leo tompor eget.</p>
-    </div>
+      <section class="news">
+        <h3>news <img src="images/triangle.png" alt="triangle" class="emoji"></h3>
+        <p class="small-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc accumsan sed diam ut consectetur. Nunc maximus magna dolor,
+          eget accumsan leo tompor eget.</p>
+      </section>
+    </main>
   </div>
   <script>
     const burgerButton = document.getElementsByClassName('burger-menu')[0];
